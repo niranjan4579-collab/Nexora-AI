@@ -14,6 +14,7 @@
     .visual{min-height:390px;border:1px solid var(--line);border-radius:28px;padding:25px;background:linear-gradient(145deg,rgba(24,54,84,.92),rgba(8,19,33,.95));position:relative;overflow:hidden}.orb{position:absolute;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(100,227,232,.48),rgba(76,166,255,.08) 60%,transparent 72%);top:10px;right:-35px}.dash{position:relative;margin-top:45px;background:rgba(5,15,27,.76);border:1px solid var(--line);border-radius:18px;padding:18px}.dashhead{display:flex;justify-content:space-between;color:var(--muted);font-size:.82rem}.status{color:var(--cyan)}.metric{font-size:2rem;font-weight:900;margin:8px 0 0}.bars{display:flex;align-items:end;gap:9px;height:75px;margin-top:20px}.bars i{display:block;flex:1;border-radius:6px 6px 2px 2px;background:linear-gradient(var(--cyan),var(--blue));opacity:.9}.minirow{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.mini{background:rgba(255,255,255,.04);border:1px solid var(--line);padding:14px;border-radius:13px;font-size:.86rem}.mini b{display:block;color:var(--cyan);font-size:1.1rem}
     section{padding:66px 0}.sectionhead{max-width:680px;margin-bottom:30px}.sectionhead h2{font-size:clamp(2rem,3.5vw,3rem);line-height:1.12;letter-spacing:-.03em;margin:10px 0}.sectionhead p{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(150deg,rgba(16,35,58,.95),rgba(9,22,38,.95));border:1px solid var(--line);border-radius:18px;padding:23px}.ico{width:44px;height:44px;display:grid;place-items:center;border-radius:13px;background:rgba(100,227,232,.1);font-size:1.35rem;margin-bottom:18px}.card h3{margin:0 0 8px}.card p{color:var(--muted);margin:0;font-size:.96rem}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:step}.step{border-top:1px solid var(--line);padding-top:20px}.step:before{counter-increment:step;content:"0" counter(step);font-size:.8rem;color:var(--cyan);font-weight:900;letter-spacing:.1em}.step h3{margin:8px 0}.step p{color:var(--muted);margin:0}.band{background:linear-gradient(115deg,rgba(36,99,157,.35),rgba(100,227,232,.08));border:1px solid var(--line);border-radius:24px;padding:38px;display:flex;align-items:center;justify-content:space-between;gap:25px}.band h2{margin:0 0 8px;font-size:clamp(1.7rem,3vw,2.5rem)}.band p{color:var(--muted);margin:0;max-width:650px}
     .contactgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:25px}.contactinfo p{color:var(--muted)}form{display:grid;gap:13px}.field{display:grid;gap:6px}.field label{font-size:.88rem;color:var(--muted)}input,select,textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;background:#091626;color:var(--text);font:inherit}textarea{min-height:110px;resize:vertical}.formhint{color:var(--muted);font-size:.8rem}.footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.88rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.pill{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:99px;color:var(--muted);font-size:.8rem;margin:4px 4px 0 0}
+    .contactlinks{display:grid;gap:12px;margin-top:24px}.contactlink{display:block;padding:18px 20px;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow-wrap:anywhere}.contactlink strong{display:block;color:var(--cyan);margin-bottom:4px}.contactlink span{color:var(--text)}.contactlink:hover{background:var(--panel2);border-color:var(--cyan)}.contactlink:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
     @media(max-width:800px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding:55px 0}.visual{min-height:340px}.grid,.steps{grid-template-columns:1fr}.band{align-items:flex-start;flex-direction:column}.contactgrid{grid-template-columns:1fr}section{padding:48px 0}}
   </style>
 </head>
@@ -79,7 +80,15 @@
   </section>
   <section id="contact">
     <div class="wrap contactgrid">
-      <div class="contactinfo"><div class="eyebrow">Start a conversation</div><h2>What would you like to improve?</h2><p>Share a little about your business and what you want to automate or create. This demo form opens your email app with a pre-filled enquiry.</p><p><strong>Email:</strong> <span style="color:var(--muted)">Replace with your business email</span><br><strong>WhatsApp:</strong> <span style="color:var(--muted)">Add your business number</span></p></div>
+      <div class="contactinfo">
+        <div class="eyebrow">Start a conversation</div>
+        <h2>What would you like to improve?</h2>
+        <p>Share a little about your business and what you want to automate or create. Contact us directly on WhatsApp or email, or use the form to open your email app with a pre-filled enquiry.</p>
+        <div class="contactlinks" aria-label="Contact options">
+          <a class="contactlink" href="https://wa.me/918527856091" target="_blank" rel="noopener noreferrer"><strong>WhatsApp ↗</strong><span>+91 85278 56091</span></a>
+          <a class="contactlink" href="mailto:sm@ffdwarka.online"><strong>Email ↗</strong><span>sm@ffdwarka.online</span></a>
+        </div>
+      </div>
       <div class="card">
         <form id="contactForm">
           <div class="field"><label for="name">Your name</label><input id="name" name="name" placeholder="Full name" required></div>
@@ -88,7 +97,7 @@
           <div class="field"><label for="service">What do you need?</label><select id="service" name="service"><option>Workflow automation</option><option>Lead capture and follow-up</option><option>WhatsApp Business setup</option><option>Reports and dashboards</option><option>Social media creatives</option><option>Custom AI workflow</option><option>Not sure yet</option></select></div>
           <div class="field"><label for="message">Tell us about your goal</label><textarea id="message" name="message" placeholder="What task would you like to make easier?"></textarea></div>
           <button class="btn" type="submit">Prepare my enquiry ↗</button>
-          <div class="formhint">Before publishing, add your real email address to the website code so enquiries reach you.</div>
+          <div class="formhint">Opens your email app with an enquiry addressed to sm@ffdwarka.online. Send it from your email app to get in touch.</div>
         </form>
       </div>
     </div>
@@ -102,14 +111,13 @@
     const data = new FormData(this);
     const subject = encodeURIComponent('Nexora AI website enquiry — ' + data.get('name'));
     const body = encodeURIComponent(
-      'Name: ' + data.get('name') + '\\n' +
-      'Business: ' + data.get('business') + '\\n' +
-      'Email: ' + data.get('email') + '\\n' +
-      'Service: ' + data.get('service') + '\\n\\n' +
+      'Name: ' + data.get('name') + '\n' +
+      'Business: ' + data.get('business') + '\n' +
+      'Email: ' + data.get('email') + '\n' +
+      'Service: ' + data.get('service') + '\n\n' +
       'Goal: ' + data.get('message')
     );
-    // Replace this placeholder with your actual business email before publishing.
-    window.location.href = 'mailto:YOUR-EMAIL@example.com?subject=' + subject + '&body=' + body;
+    window.location.href = 'mailto:sm@ffdwarka.online?subject=' + subject + '&body=' + body;
   });
 </script>
 </body>
