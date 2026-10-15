@@ -79,7 +79,7 @@
   </section>
   <section id="contact">
     <div class="wrap contactgrid">
-      <div class="contactinfo"><div class="eyebrow">Start a conversation</div><h2>What would you like to improve?</h2><p>Share a little about your business and what you want to automate or create. This demo form opens your email app with a pre-filled enquiry.</p><p><strong>Email:</strong> <span style="color:var(--muted)">Replace with your business email</span><br><strong>WhatsApp:</strong> <span style="color:var(--muted)">Add your business number</span></p></div>
+      <div class="contactinfo"><div class="eyebrow">Start a conversation</div><h2>What would you like to improve?</h2><p>Share a little about your business and what you want to automate or create. This form opens your email app with a pre-filled enquiry addressed to sm@ffdwarka.online.</p><p><strong>Email:</strong> <a href="mailto:sm@ffdwarka.online">sm@ffdwarka.online</a><br><strong>Phone:</strong> <a href="tel:+918527856091">+91 85278 56091</a><br><strong>WhatsApp:</strong> <a href="https://wa.me/918527856091">Chat on WhatsApp</a></p></div>
       <div class="card">
         <form id="contactForm">
           <div class="field"><label for="name">Your name</label><input id="name" name="name" placeholder="Full name" required></div>
@@ -88,7 +88,7 @@
           <div class="field"><label for="service">What do you need?</label><select id="service" name="service"><option>Workflow automation</option><option>Lead capture and follow-up</option><option>WhatsApp Business setup</option><option>Reports and dashboards</option><option>Social media creatives</option><option>Custom AI workflow</option><option>Not sure yet</option></select></div>
           <div class="field"><label for="message">Tell us about your goal</label><textarea id="message" name="message" placeholder="What task would you like to make easier?"></textarea></div>
           <button class="btn" type="submit">Prepare my enquiry ↗</button>
-          <div class="formhint">Before publishing, add your real email address to the website code so enquiries reach you.</div>
+          <div class="formhint">Your email app opens with your enquiry ready to send to sm@ffdwarka.online.</div>
         </form>
       </div>
     </div>
@@ -102,14 +102,13 @@
     const data = new FormData(this);
     const subject = encodeURIComponent('Nexora AI website enquiry — ' + data.get('name'));
     const body = encodeURIComponent(
-      'Name: ' + data.get('name') + '\\n' +
-      'Business: ' + data.get('business') + '\\n' +
-      'Email: ' + data.get('email') + '\\n' +
-      'Service: ' + data.get('service') + '\\n\\n' +
+      'Name: ' + data.get('name') + '\n' +
+      'Business: ' + data.get('business') + '\n' +
+      'Email: ' + data.get('email') + '\n' +
+      'Service: ' + data.get('service') + '\n\n' +
       'Goal: ' + data.get('message')
     );
-    // Replace this placeholder with your actual business email before publishing.
-    window.location.href = 'mailto:YOUR-EMAIL@example.com?subject=' + subject + '&body=' + body;
+    window.location.href = 'mailto:sm@ffdwarka.online?subject=' + subject + '&body=' + body;
   });
 </script>
 </body>
