@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nexora AI helps businesses grow with AI automation, lead management, WhatsApp workflows, and social media creatives.">
+  <title>Nexora AI — Smarter Work. Better Growth.</title>
+  <style>
+    :root{--bg:#07111f;--panel:#0d1b2d;--panel2:#10233a;--text:#f4f7fb;--muted:#a9b8ca;--blue:#4ca6ff;--cyan:#64e3e8;--yellow:#ffd166;--line:rgba(255,255,255,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 5%,rgba(40,113,194,.22),transparent 28%),var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid var(--line)}.brand{font-weight:900;letter-spacing:.08em;font-size:1.2rem}.brand span{color:var(--cyan)}.navlinks{display:flex;gap:25px;color:var(--muted);font-size:.94rem}.navlinks a:hover{color:white}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;background:linear-gradient(120deg,var(--blue),var(--cyan));color:#06111e;font-weight:800;border:0;cursor:pointer;box-shadow:0 10px 30px rgba(76,166,255,.18)}.btn.secondary{background:transparent;border:1px solid var(--line);color:var(--text);box-shadow:none}
+    .hero{padding:82px 0 68px;display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}.eyebrow{color:var(--cyan);font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.hero h1{font-size:clamp(2.6rem,5vw,4.8rem);line-height:1.04;letter-spacing:-.045em;margin:17px 0}.hero h1 em{font-style:normal;color:var(--cyan)}.hero p{color:var(--muted);font-size:1.12rem;max-width:620px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.note{font-size:.83rem!important;margin-top:18px}
+    .visual{min-height:390px;border:1px solid var(--line);border-radius:28px;padding:25px;background:linear-gradient(145deg,rgba(24,54,84,.92),rgba(8,19,33,.95));position:relative;overflow:hidden}.orb{position:absolute;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(100,227,232,.48),rgba(76,166,255,.08) 60%,transparent 72%);top:10px;right:-35px}.dash{position:relative;margin-top:45px;background:rgba(5,15,27,.76);border:1px solid var(--line);border-radius:18px;padding:18px}.dashhead{display:flex;justify-content:space-between;color:var(--muted);font-size:.82rem}.status{color:var(--cyan)}.metric{font-size:2rem;font-weight:900;margin:8px 0 0}.bars{display:flex;align-items:end;gap:9px;height:75px;margin-top:20px}.bars i{display:block;flex:1;border-radius:6px 6px 2px 2px;background:linear-gradient(var(--cyan),var(--blue));opacity:.9}.minirow{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.mini{background:rgba(255,255,255,.04);border:1px solid var(--line);padding:14px;border-radius:13px;font-size:.86rem}.mini b{display:block;color:var(--cyan);font-size:1.1rem}
+    section{padding:66px 0}.sectionhead{max-width:680px;margin-bottom:30px}.sectionhead h2{font-size:clamp(2rem,3.5vw,3rem);line-height:1.12;letter-spacing:-.03em;margin:10px 0}.sectionhead p{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(150deg,rgba(16,35,58,.95),rgba(9,22,38,.95));border:1px solid var(--line);border-radius:18px;padding:23px}.ico{width:44px;height:44px;display:grid;place-items:center;border-radius:13px;background:rgba(100,227,232,.1);font-size:1.35rem;margin-bottom:18px}.card h3{margin:0 0 8px}.card p{color:var(--muted);margin:0;font-size:.96rem}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:step}.step{border-top:1px solid var(--line);padding-top:20px}.step:before{counter-increment:step;content:"0" counter(step);font-size:.8rem;color:var(--cyan);font-weight:900;letter-spacing:.1em}.step h3{margin:8px 0}.step p{color:var(--muted);margin:0}.band{background:linear-gradient(115deg,rgba(36,99,157,.35),rgba(100,227,232,.08));border:1px solid var(--line);border-radius:24px;padding:38px;display:flex;align-items:center;justify-content:space-between;gap:25px}.band h2{margin:0 0 8px;font-size:clamp(1.7rem,3vw,2.5rem)}.band p{color:var(--muted);margin:0;max-width:650px}
+    .contactgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:25px}.contactinfo p{color:var(--muted)}form{display:grid;gap:13px}.field{display:grid;gap:6px}.field label{font-size:.88rem;color:var(--muted)}input,select,textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;background:#091626;color:var(--text);font:inherit}textarea{min-height:110px;resize:vertical}.formhint{color:var(--muted);font-size:.8rem}.footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.88rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.pill{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:99px;color:var(--muted);font-size:.8rem;margin:4px 4px 0 0}
+    @media(max-width:800px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding:55px 0}.visual{min-height:340px}.grid,.steps{grid-template-columns:1fr}.band{align-items:flex-start;flex-direction:column}.contactgrid{grid-template-columns:1fr}section{padding:48px 0}}
+  </style>
+</head>
+<body>
+<header class="wrap">
+  <nav class="nav">
+    <a class="brand" href="#"><span>NEXORA</span> AI</a>
+    <div class="navlinks"><a href="#services">Services</a><a href="#process">How it works</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+    <a class="btn" href="#contact">Get a free consultation</a>
+  </nav>
+</header>
+<main>
+  <div class="wrap hero">
+    <div>
+      <div class="eyebrow">AI automation • Digital growth • Creative solutions</div>
+      <h1>Smarter work.<br><em>Better growth.</em></h1>
+      <p>Nexora AI helps businesses save time, respond faster, and turn more enquiries into customers with practical automation and digital solutions.</p>
+      <div class="actions"><a class="btn" href="#contact">Let's build your workflow ↗</a><a class="btn secondary" href="#services">Explore services</a></div>
+      <p class="note">Built for growing businesses, service providers, and ambitious teams.</p>
+      <div><span class="pill">Lead management</span><span class="pill">Workflow automation</span><span class="pill">Social media creatives</span></div>
+    </div>
+    <div class="visual" aria-label="Illustrative automation dashboard">
+      <div class="orb"></div>
+      <div class="eyebrow">NEXORA CONTROL CENTRE</div>
+      <div class="dash">
+        <div class="dashhead"><span>Workflow overview</span><span class="status">● System concept</span></div>
+        <div class="metric">Less busywork. More momentum.</div>
+        <div class="bars"><i style="height:32%"></i><i style="height:50%"></i><i style="height:43%"></i><i style="height:68%"></i><i style="height:59%"></i><i style="height:84%"></i><i style="height:74%"></i><i style="height:100%"></i></div>
+      </div>
+      <div class="minirow"><div class="mini"><b>01 / Capture</b>Collect enquiries in one place</div><div class="mini"><b>02 / Follow up</b>Keep every lead moving</div></div>
+    </div>
+  </div>
+  <section id="services">
+    <div class="wrap">
+      <div class="sectionhead"><div class="eyebrow">What we do</div><h2>Useful AI and digital tools, without the complexity.</h2><p>Start with one clear business problem. We’ll help design a practical solution that fits your process and budget.</p></div>
+      <div class="grid">
+        <article class="card"><div class="ico">⚡</div><h3>Workflow Automation</h3><p>Connect forms, spreadsheets, email and everyday tools to reduce repetitive admin work.</p></article>
+        <article class="card"><div class="ico">🎯</div><h3>Lead Capture & Follow-up</h3><p>Organise enquiries, track lead status and create timely follow-up reminders for your team.</p></article>
+        <article class="card"><div class="ico">💬</div><h3>WhatsApp Business Setup</h3><p>Plan customer communication flows using approved WhatsApp Business tools and consent-based messaging.</p></article>
+        <article class="card"><div class="ico">📊</div><h3>Reports & Dashboards</h3><p>Turn scattered data into simple reports for sales, operations and day-to-day decisions.</p></article>
+        <article class="card"><div class="ico">🎨</div><h3>Social Media Creatives</h3><p>Get promotional posts, flyers, banners and campaign designs for your business.</p></article>
+        <article class="card"><div class="ico">🧩</div><h3>Custom AI Workflows</h3><p>Explore AI-assisted FAQs, content workflows and internal tools tailored to your needs.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="process">
+    <div class="wrap">
+      <div class="sectionhead"><div class="eyebrow">A simple process</div><h2>From bottleneck to better workflow.</h2><p>No unnecessary complexity. Just a clear plan, a working setup, and support when you need it.</p></div>
+      <div class="steps">
+        <div class="step"><h3>Understand your process</h3><p>We learn how you currently handle leads, messages, reporting or creative work.</p></div>
+        <div class="step"><h3>Build a practical solution</h3><p>We map the workflow, choose suitable tools and test the setup with you.</p></div>
+        <div class="step"><h3>Launch and improve</h3><p>You get a walkthrough and can refine the process as your business grows.</p></div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrap">
+      <div class="band">
+        <div><div class="eyebrow">Why Nexora AI</div><h2>Technology should make business simpler.</h2><p>We focus on approachable, budget-conscious digital solutions that help teams work more consistently and give customers a better experience.</p></div>
+        <a class="btn" href="#contact">Tell us what you need ↗</a>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="wrap contactgrid">
+      <div class="contactinfo"><div class="eyebrow">Start a conversation</div><h2>What would you like to improve?</h2><p>Share a little about your business and what you want to automate or create. This demo form opens your email app with a pre-filled enquiry.</p><p><strong>Email:</strong> <span style="color:var(--muted)">Replace with your business email</span><br><strong>WhatsApp:</strong> <span style="color:var(--muted)">Add your business number</span></p></div>
+      <div class="card">
+        <form id="contactForm">
+          <div class="field"><label for="name">Your name</label><input id="name" name="name" placeholder="Full name" required></div>
+          <div class="field"><label for="business">Business name</label><input id="business" name="business" placeholder="Your company or brand"></div>
+          <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required></div>
+          <div class="field"><label for="service">What do you need?</label><select id="service" name="service"><option>Workflow automation</option><option>Lead capture and follow-up</option><option>WhatsApp Business setup</option><option>Reports and dashboards</option><option>Social media creatives</option><option>Custom AI workflow</option><option>Not sure yet</option></select></div>
+          <div class="field"><label for="message">Tell us about your goal</label><textarea id="message" name="message" placeholder="What task would you like to make easier?"></textarea></div>
+          <button class="btn" type="submit">Prepare my enquiry ↗</button>
+          <div class="formhint">Before publishing, add your real email address to the website code so enquiries reach you.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="wrap footer"><div>© <span id="year"></span> Nexora AI. All rights reserved.</div><div>Smarter workflows for growing businesses.</div></footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const data = new FormData(this);
+    const subject = encodeURIComponent('Nexora AI website enquiry — ' + data.get('name'));
+    const body = encodeURIComponent(
+      'Name: ' + data.get('name') + '\\n' +
+      'Business: ' + data.get('business') + '\\n' +
+      'Email: ' + data.get('email') + '\\n' +
+      'Service: ' + data.get('service') + '\\n\\n' +
+      'Goal: ' + data.get('message')
+    );
+    // Replace this placeholder with your actual business email before publishing.
+    window.location.href = 'mailto:YOUR-EMAIL@example.com?subject=' + subject + '&body=' + body;
+  });
+</script>
+</body>
+</html>
